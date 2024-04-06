@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <!-- start header -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+        <div class="col head">
+            <div class="card h-100">
+                <div class="card-body text-center head1">
+                    <h3 class="card-title "><span>my</span>Account</h3>
+                    <br>
+                    <div class="account">
+                        <a href="#">Create My Account</a>
+                        <br>
+                        <form action="">
+                            <input class="form-control mt-3" type="email" placeholder="Email">
+                            <br>
+                            <input class="form-control mb-5" type="password" placeholder="Password">
+                        </form>
+                    </div>
+
+                    <div class="per">
+                        <h1>Personal</h1>
+                        <i class="fa-solid fa-check"></i>
+                        <p>Manage tasks for yourself.</p>
+                    </div>
+                    <br>
+                    <div class="team">
+                        <h1>Team</h1>
+                        <p>Work together on shared tasks.</p>
+                    </div>
+
+                    <br>
+                    <div class="test">
+                        <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col head">
+            <div class="card h-100">
+                <div class="card-body text-center head1">
+                    <h3 class="card-title "><span>my</span>Todo</h3>
+                    <br>
+                    
+                    <div class="row box">
+                        <input type="text" id="input-box" placeholder="Add your text">
+                        <button onclick="addTask()">Add</button>
+                    </div>
+                    <ul id="todo">
+                        <!-- <li class="check">Read in 20 minutes</li>
+                        <li>Read in 20 minutes</li>
+                        <li>Read in 20 minutes</li>
+                        <li>Read in 20 minutes</li> -->
+                    </ul>
+                    <a href="#" class="mt-5" style="color: blueviolet; padding-bottom: 20px;"> New Task +</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col head">
+            <div class="card h-100">
+                <div class="card-body text-center head1">
+                    <h3 class="card-title"><span>Choose</span> Calor</h3>
+<br>
+                    <div id="mode">
+                        <i class="ind"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
